@@ -2,7 +2,7 @@
 To do list 
 Specifications
 
-##User Stories
+## User Stories
 
 [ ]Users can create to do list items.
 [ ]Users can delete unwanted to do list items.
@@ -12,20 +12,20 @@ Specifications
 [ ] When an error occurs, the user is notified.
 
 
-##Additional
+## Additional
 
  ##Backend uses Node.js and Express.
  [ ] App persists to do list items in a database.
  [ ]The artifact produced is properly licensed, preferably with the MIT license.
 
-##Stretch
+## Stretch
 
  [ ] App is deployed on Heroku.
  [ ] Users can create multiple to-do lists.
  [ ]Users have their own account and can sign up and log in/out.
  [ ]App is written with ES6 and compiled using babel.
 
-##Quality Rubric
+## Quality Rubric
 
 Well formatted code
 
