@@ -4,13 +4,13 @@ Specifications
 
 ## User Stories
 
-[ ]Users can create to do list items.
-[ ]Users can delete unwanted to do list items.
-[ ] Users can check items off as completed.
-[ ] Users can rearrange to do list items.
-[ ] Users can edit the text on existing to do list items.
-[ ] When an error occurs, the user is notified.
----
+-[ ]Users can create to do list items.
+-[ ]Users can delete unwanted to do list items.
+-[ ] Users can check items off as completed.
+-[ ] Users can rearrange to do list items.
+-[ ] Users can edit the text on existing to do list items.
+-[ ] When an error occurs, the user is notified.
+
 
 ## Additional
 
