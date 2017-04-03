@@ -10,7 +10,7 @@ Specifications
 [ ] Users can rearrange to do list items.
 [ ] Users can edit the text on existing to do list items.
 [ ] When an error occurs, the user is notified.
-
+---
 
 ## Additional
 
