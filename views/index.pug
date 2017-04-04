@@ -1,5 +1,23 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+
+  .flex-container-header
+    .flex-item-head 
+        .container-fluid
+          img(class='brand' alt='Brand', src='images/dubo.jpg')
+  
+  .flex-container-content
+    each item in todolist   
+      ul   
+        button.btn.btn-danger(type='button') DELETE
+        form(action='post')
+          input(type='text', name='task', placeholder='GET SHIT DONE')
+          
+        
+        
+        
+        
+        
+
+        
