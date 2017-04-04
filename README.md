@@ -20,15 +20,15 @@ Specifications
 ## Additional
 
  ##Backend uses Node.js and Express.
- [ ] App persists to do list items in a database.
- [ ]The artifact produced is properly licensed, preferably with the MIT license.
+ - [ ] App persists to do list items in a database.
+ - [ ] The artifact produced is properly licensed, preferably with the MIT license.
 
 ## Stretch
 
- [ ] App is deployed on Heroku.
- [ ] Users can create multiple to-do lists.
- [ ]Users have their own account and can sign up and log in/out.
- [ ]App is written with ES6 and compiled using babel.
+- [ ]App is deployed on Heroku.
+- [ ]Users can create multiple to-do lists.
+- [ ]Users have their own account and can sign up and log in/out.
+- [ ]App is written with ES6 and compiled using babel.
 
 ## Quality Rubric
 
