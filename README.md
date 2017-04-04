@@ -50,6 +50,6 @@ There is a command to install dependencies (e.g. npm install) and it is specifie
 Good project management
 
 Commit messages are concise and descriptive. [25 points]
-All features are added via pull requests. [25 points]
-Every pull request has a description summarizing the changes made. [25 points]
-Every pull request has been reviewed by at least one other person. [25 points]
+- All features are added via pull requests. [25 points]
+- Every pull request has a description summarizing the changes made. [25 points]
+- Every pull request has been reviewed by at least one other person. [25 points]
