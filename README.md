@@ -1,8 +1,8 @@
 # Dubo
 To do list 
-## Specifications
+# Specifications
 
-# User Stories
+## User Stories
 
 - [ ] Users can create to do list items.
 
@@ -17,32 +17,32 @@ To do list
 - [ ] When an error occurs, the user is notified.
 
 
-# Additional
+## Additional
 
- # Backend uses Node.js and Express.
+ ## Backend uses Node.js and Express.
  - [ ] App persists to do list items in a database.
  - [ ] The artifact produced is properly licensed, preferably with the MIT license.
 
-# Stretch
+## Stretch
 
 - [ ] App is deployed on Heroku.
 - [ ] Users can create multiple to-do lists.
 - [ ] Users have their own account and can sign up and log in/out.
 - [ ] App is written with ES6 and compiled using babel.
 
-## Quality Rubric
+# Quality Rubric
 
-# Well formatted code
+## Well formatted code
 
 - Code uses a linter, which can be invoked with a command (e.g. npm run lint). [50 points]
 - Running the linter on all source code files generates no linting errors. [50 points]
 
-# Testing
+## Testing
 
 - There is a command to run tests (e.g. npm test) and it is specified in the installation and setup instructions of the README. [50 pts]
 - There are thorough tests for all functionality involved in interacting with the database. [50 pts]
 
-# Clear and useful README
+## Clear and useful README
 
 - Repository includes a README file with installation and setup instructions. [25 points]
 - Repository includes a README file with usage instructions and at least one example use case. [25 points]
@@ -50,7 +50,7 @@ To do list
 
 - There is a command to install dependencies (e.g. npm install) and it is specified in the installation and setup instructions of the README. [50 points]
 
-# Good project management
+## Good project management
 
 - Commit messages are concise and descriptive. [25 points]
 - All features are added via pull requests. [25 points]
