@@ -4,17 +4,17 @@ Specifications
 
 ## User Stories
 
--[ ] Users can create to do list items.
+- [ ] Users can create to do list items.
 
--[ ] Users can delete unwanted to do list items.
+- [ ] Users can delete unwanted to do list items.
 
--[ ] Users can check items off as completed.
+- [ ] Users can check items off as completed.
 
--[ ] Users can rearrange to do list items.
+- [ ] Users can rearrange to do list items.
 
--[ ] Users can edit the text on existing to do list items.
+- [ ] Users can edit the text on existing to do list items.
 
--[ ] When an error occurs, the user is notified.
+- [ ] When an error occurs, the user is notified.
 
 
 ## Additional
@@ -25,10 +25,10 @@ Specifications
 
 ## Stretch
 
-- [ ]App is deployed on Heroku.
-- [ ]Users can create multiple to-do lists.
-- [ ]Users have their own account and can sign up and log in/out.
-- [ ]App is written with ES6 and compiled using babel.
+- [ ] App is deployed on Heroku.
+- [ ] Users can create multiple to-do lists.
+- [ ] Users have their own account and can sign up and log in/out.
+- [ ] App is written with ES6 and compiled using babel.
 
 ## Quality Rubric
 
