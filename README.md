@@ -19,7 +19,7 @@ To do list
 
 # Additional
 
- ##Backend uses Node.js and Express.
+ # Backend uses Node.js and Express.
  - [ ] App persists to do list items in a database.
  - [ ] The artifact produced is properly licensed, preferably with the MIT license.
 
