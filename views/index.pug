@@ -1,7 +1,6 @@
 extends layout
 
 block content
-
   .flex-container-header
     .flex-item-head 
         .container-fluid
@@ -9,11 +8,8 @@ block content
   
   .flex-container-content
     ul 
-      
-      form(action='/create' method='post')
-        input(name='task' type='text' placeholder='Do Stuff')
-        button.btn.btn-primary(type ='submit') Submit
-        button.btn.btn-danger(type='submit') DELETE
-        
-
-        
+      li
+        form(action='/create' method='post')
+          input(type='text', name='task', placeholder='GET STUFF DONE' priority=`${alltasks.thisOneTask.priority}`)
+          button.btn.btn-primary(type='submit') Submit
+          button.btn.btn-danger(type='button') DELETE
