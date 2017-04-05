@@ -34,8 +34,8 @@ To do list
 
 ## Well formatted code
 
-- [ ] Code uses a linter, which can be invoked with a command (e.g. npm run lint). [50 points]
-- [ ] Running the linter on all source code files generates no linting errors. [50 points]
+- [x] Code uses a linter, which can be invoked with a command (e.g. npm run lint). [50 points]
+- [x] Running the linter on all source code files generates no linting errors. [50 points]
 
 ## Testing
 

@@ -1,9 +1,10 @@
 var express = require('express');
 var router = express.Router();
+
 var allTasks = require('../db/db.js')
 
   /* GET home page. */
-  router.get('/', function(req, res, next) {
+  router.get('/', function(request, response, next) {
     res.render('index', { title: 'Express'});
   });
 
@@ -14,6 +15,7 @@ var allTasks = require('../db/db.js')
     )
     .catch(error => res.json(error))
   })
+
 
 
 module.exports = router;

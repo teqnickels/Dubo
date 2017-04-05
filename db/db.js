@@ -30,4 +30,4 @@ const allTasks = {
 //function is executed that contains a sql query that INSERT INTO todolist (priority) the value of the
 //var priority
 
-module.exports = allTasks
+module.exports = {allTasks}
