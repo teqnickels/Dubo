@@ -29,5 +29,13 @@ var allTasks = require('../db/db.js')
     .catch(error => response.json(error))
   })
 
+   router.post('/edit/:id',(request,response) => {
+     console.log("WE MADE IT HERE");
+     allTasks.edit( request.body.task, request.params.id ).then( () =>
+      response.redirect('/')
+    )
+    .catch(error => response.json(error))
+   })
+
 
 module.exports = router;
