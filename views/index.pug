@@ -8,9 +8,11 @@ block content
   
   .flex-container-content
     ul 
+    li
+      form(action='/create' method='post')
+        input(type='text', name='task', placeholder='GET STUFF DONE' )
+        button.btn.btn-primary(type='submit') Submit
     each thing in allTasks
       li
-        form(action='/create' method='post')
-          input(type='text', name='task', placeholder='GET STUFF DONE' )
-          button.btn.btn-primary(type='submit') Submit
-          button.btn.btn-danger(type='button') DELETE
+        button.btn.btn-danger(type='button') DELETE
+        p #{thing.title}
