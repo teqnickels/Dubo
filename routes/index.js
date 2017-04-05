@@ -6,6 +6,7 @@ var allTasks = require('../db/db.js')
   /* GET home page. */
   router.get('/', function( request, response ) {
     allTasks.showAll().then(task => {
+      console.log(task)
       response.render('index', {
         title: 'To Do List',
         allTasks: task
@@ -16,6 +17,13 @@ var allTasks = require('../db/db.js')
 
   router.post('/create', (request, response) => {
     allTasks.create(request.body.task).then( () =>
+      response.redirect('/')
+    )
+    .catch(error => response.json(error))
+  })
+
+  router.delete('/deleteTask/:id',(request,response) => {
+    allTasks.deleteTask(request.params.id).then( () =>
       response.redirect('/')
     )
     .catch(error => response.json(error))

@@ -14,5 +14,6 @@ block content
         button.btn.btn-primary(type='submit') Submit
     each thing in allTasks
       li
-        button.btn.btn-danger(type='button') DELETE
+        form(action=`/deleteTask/${thing.id}` method='delete')
+          button.btn.btn-danger(type='submit') DELETE
         p #{thing.title}
