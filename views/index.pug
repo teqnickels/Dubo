@@ -1,0 +1,19 @@
+extends layout
+
+block content
+
+  .flex-container-header
+    .flex-item-head 
+        .container-fluid
+          img(class='brand' alt='Brand', src='images/dubo.jpg')
+  
+  .flex-container-content
+    ul 
+      
+      form(action='/create' method='post')
+        input(name='task' type='text' placeholder='Do Stuff')
+        button.btn.btn-primary(type ='submit') Submit
+        button.btn.btn-danger(type='submit') DELETE
+        
+
+        
