@@ -9,7 +9,6 @@ var allTasks = require('../db/db.js')
   });
 
   router.post('/create', (req, res) => {
-    // console.log('THE CREATE ROUTE HAS BEEN CALLED',req.body.task);
     allTasks.create(req.body.task).then( () =>
       res.redirect('/')
     )
