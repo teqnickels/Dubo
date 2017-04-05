@@ -8,7 +8,7 @@ var allTasks = require('../db/db.js')
     allTasks.showAll().then(task => {
       response.render('index', {
         title: 'To Do List',
-        allTasks: allTasks
+        allTasks: task
       })
     })
     .catch(error => res.json(error))
@@ -21,8 +21,5 @@ var allTasks = require('../db/db.js')
     .catch(error => response.json(error))
   })
 
-//write a function that loops through the object alltasks
-//and returns the value here
-//pass that value into the object at literal in render
 
 module.exports = router;
