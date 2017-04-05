@@ -5,7 +5,7 @@ const db = pgp(`postgres://${process.env.USER}@localhost:5432/dubo`)
 const create = 'INSERT INTO todolist (title) VALUES ($1) RETURNING *'
 const deleteTask = 'DELETE FROM todolist WHERE id = $1'
 const showAll = 'SELECT * FROM todolist ORDER BY priority'
-const edit = 'UPDATE todolist SET title WHERE id = $1'
+const edit = 'UPDATE todolist SET title = ($1) WHERE id = ($2) RETURNING *'
 
 const allTasks = {
   create: ( title ) => {
@@ -20,8 +20,8 @@ const allTasks = {
     return db.any( showAll, [id] )
   },
 
-  edit: ( id ) => {
-    return db.one( edit, [id] )
+  edit: ( title, id ) => {
+    return db.one( edit, [title, id] )
   }
 }
 

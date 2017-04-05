@@ -17,3 +17,7 @@ block content
         form(action=`/deleteTask/${thing.id}` method='delete')
           button.btn.btn-danger(type='submit') DELETE
         p #{thing.title}
+        
+        form(action=`/edit/${thing.id}` method='post')
+          input(type='text' name='task' placeholder='EDIT')
+          button.btn.btn-secondary(type='submit') EDIT 
