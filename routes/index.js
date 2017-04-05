@@ -1,34 +1,30 @@
 var express = require('express');
 var router = express.Router();
-var db = require('/Users/leah/Desktop/LG projects 2/Dubo/db/db.js')
+var db = require('/Users/leah/Desktop/LG projects 2/Dubo/db/db.js');
+
 
   /* GET home page. */
-  router.get('/', function(req, res, next) {
+  router.get('/', function(request, response, next) {
     res.render('index', { title: 'Express'});
   });
 
-router.get('/create',(req,res,next)=> {
-  db.allTasks()
-  .then( () =>{
-    res.render('index', { title: 'Express'})
-  })
-})
-  router.post('/create', (req, res) => {
-    allTasks.create(req.body.params)
-    .then( () =>
-      res.redirect('/')
-    )
-    .catch(error => res.json(error))
+  router.post('/create',(request, response, next)=> {
+    const body = request.body
+    console.log(body);
+    db.create(body)
+
+    .then( () =>{
+      res.render('index', { title: 'Dubo'})
+    })
   })
 
-  // router.get('/', function(req, res, next) {
-  //   allTasks.showAll().then(todolist => {
-  //     res.render('index', {
-  //       title: 'Dubo',
-  //       task: todolist
-  //     }).catch(error => next(error))
-  //   })
-  // })
-  //
-  //
+
+
+// router.post('/create-project', (req, res) => {
+//   Projects.create(req.body.project, currentRank).then(value => {
+//     console.log(req, req.body);
+//     currentRank++
+//     res.redirect('/')
+//   })
+// })
 module.exports = router;
