@@ -2,14 +2,14 @@ const pgPromise = require("pg-promise")
 const pgp = pgPromise()
 const db = pgp(`postgres://${process.env.USER}@localhost:5432/dubo`)
 
-const create = 'INSERT INTO todolist (title) WHERE title = $1 RETURNING *'
+const create = 'INSERT INTO todolist (title) VALUES ($1)'
 const deleteTask = 'DELETE FROM todolist WHERE id = $1'
 const showAll = 'SELECT * FROM todolist ORDER BY priority'
 const edit = 'UPDATE todolist SET title WHERE id = $1'
 
 const allTasks = {
   create: ( title ) => {
-    return db.oneOrNone( create, [title] )
+    return db.none( create, title )
   },
 
   deleteTask: ( id ) => {

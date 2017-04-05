@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var allTasks = require('../db/db.js')
 
   /* GET home page. */
   router.get('/', function(req, res, next) {
@@ -7,20 +8,12 @@ var router = express.Router();
   });
 
   router.post('/create', (req, res) => {
-    allTasks.create(req.body.params).then( () =>
+    // console.log('THE CREATE ROUTE HAS BEEN CALLED',req.body.task);
+    allTasks.create(req.body.task).then( () =>
       res.redirect('/')
     )
     .catch(error => res.json(error))
   })
 
-  // router.get('/', function(req, res, next) {
-  //   allTasks.showAll().then(todolist => {
-  //     res.render('index', {
-  //       title: 'Dubo',
-  //       task: todolist
-  //     }).catch(error => next(error))
-  //   })
-  // })
-  //
-  //
+
 module.exports = router;

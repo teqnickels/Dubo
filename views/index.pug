@@ -1,7 +1,6 @@
 extends layout
 
 block content
-
   .flex-container-header
     .flex-item-head 
         .container-fluid
@@ -9,16 +8,8 @@ block content
   
   .flex-container-content
     ul 
-      each todo in todolist
-        button.btn.btn-danger(type='button') DELETE
-        form(action='post')
-          input(type='text', name='task', placeholder='GET SHIT DONE')
-          button.btn.btn-primary(type='button') Submit
-            
-        
-        
-        
-        
-        
-
-        
+      li
+        form(action='/create' method='post')
+          input(type='text', name='task', placeholder='GET STUFF DONE' priority=`${alltasks.thisOneTask.priority}`)
+          button.btn.btn-primary(type='submit') Submit
+          button.btn.btn-danger(type='button') DELETE
