@@ -9,16 +9,11 @@ block content
   
   .flex-container-content
     ul 
-      each todo in todolist
-        button.btn.btn-danger(type='button') DELETE
-        form(action='post')
-          input(type='text', name='task', placeholder='GET SHIT DONE')
-          button.btn.btn-primary(type='button') Submit
-            
-        
-        
-        
-        
+      
+      form(action='/create' method='post')
+        input(name='task' type='text' placeholder='Do Stuff')
+        button.btn.btn-primary(type ='submit') Submit
+        button.btn.btn-danger(type='submit') DELETE
         
 
         
