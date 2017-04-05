@@ -4,24 +4,24 @@ To do list
 
 ## User Stories
 
-- [ ] Users can create to do list items.
+- [x] Users can create to do list items.
 
-- [ ] Users can delete unwanted to do list items.
+- [x] Users can delete unwanted to do list items.
 
 - [ ] Users can check items off as completed.
 
 - [ ] Users can rearrange to do list items.
 
-- [ ] Users can edit the text on existing to do list items.
+- [x] Users can edit the text on existing to do list items.
 
-- [ ] When an error occurs, the user is notified.
+- [x] When an error occurs, the user is notified.
 
 
 ## Additional
 
  ## Backend uses Node.js and Express.
- - [ ] App persists to do list items in a database.
- - [ ] The artifact produced is properly licensed, preferably with the MIT license.
+ - [x] App persists to do list items in a database.
+ - [x] The artifact produced is properly licensed, preferably with the MIT license.
 
 ## Stretch
 
@@ -39,7 +39,7 @@ To do list
 
 ## Testing
 
-- [ ] There is a command to run tests (e.g. npm test) and it is specified in the installation and setup instructions of the README. [50 pts]
+- [x] There is a command to run tests (e.g. npm test) and it is specified in the installation and setup instructions of the README. [50 pts]
 - [ ] There are thorough tests for all functionality involved in interacting with the database. [50 pts]
 
 ## Clear and useful README
