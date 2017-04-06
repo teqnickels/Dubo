@@ -6,6 +6,7 @@ const create = 'INSERT INTO todolist (title) VALUES ($1) RETURNING *'
 const deleteTask = 'DELETE FROM todolist WHERE id = $1'
 const showAll = 'SELECT * FROM todolist ORDER BY priority'
 const edit = 'UPDATE todolist SET title = ($1) WHERE id = ($2) RETURNING *'
+const completed = 'UPDATE todolist SET complete = $1 WHERE ID = $2 RETURNING *'
 
 const allTasks = {
   create: ( title ) => {
@@ -22,12 +23,15 @@ const allTasks = {
 
   edit: ( title, id ) => {
     return db.one( edit, [title, id] )
+  },
+
+  completed: ( isCompleted, id ) => {
+    console.log('isCompleted:', isCompleted, 'id: ', id);
+    return db.one( completed, [isCompleted, id ])
   }
+
 }
 
-//function that will have a var priority = the highest num in the priority column
-//for each task created, priority++
-//function is executed that contains a sql query that INSERT INTO todolist (priority) the value of the
-//var priority
+
 
 module.exports = allTasks

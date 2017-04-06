@@ -12,7 +12,7 @@ var allTasks = require('../db/db.js')
         allTasks: task
       })
     })
-    .catch(error => res.json(error))
+    .catch(error => response.json(error))
   })
 
   router.post('/create', (request, response) => {
@@ -29,13 +29,21 @@ var allTasks = require('../db/db.js')
     .catch(error => response.json(error))
   })
 
-   router.post('/edit/:id',(request,response) => {
-     console.log("WE MADE IT HERE");
+   router.post('/allTasks/:id/edit',(request,response) => {
      allTasks.edit( request.body.task, request.params.id ).then( () =>
       response.redirect('/')
     )
     .catch(error => response.json(error))
    })
 
+   router.post('/allTasks/:id/completed',(request,response) => {
+     console.log('HEEEEEEEEEERRRE',request.body);
+     const isCompleted = request.body.completed === 'on' ? true : false
+     console.log('IDDDDDD',request.params.id);
+     allTasks.completed(isCompleted,parseInt(request.params.id)).then( () =>
+       response.redirect('/')
+     )
+     .catch(error => response.json(error))
+   })
 
 module.exports = router;
