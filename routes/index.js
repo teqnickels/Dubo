@@ -22,7 +22,7 @@ var allTasks = require('../db/db.js')
     .catch(error => response.json(error))
   })
 
-  router.delete('/deleteTask/:id',(request,response) => {
+  router.post('/allTasks/:id/deleteTask',(request,response) => {
     allTasks.deleteTask(request.params.id).then( () =>
       response.redirect('/')
     )
