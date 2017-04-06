@@ -17,8 +17,18 @@ block content
         form(action=`/allTasks/${thing.id}/deleteTask` method='post')
           button.btn.btn-danger(type='submit') DELETE
           
-        p #{thing.title}
         
-        form(action=`/edit/${thing.id}` method='post')
+        form(action=`/allTasks/${thing.id}/edit` method='post')
           input(type='text' name='task' placeholder='EDIT')
           button.btn.btn-secondary(type='submit') EDIT 
+          
+        .form-group
+          label.col-md-1.control-label(for='completed') select
+          .col-md-5
+            .checkbox
+              form(action=`/allTasks/${thing.id}/completed` method='post')
+                input.checked(type='checkbox', name='completed')
+                label.strikethrough #{thing.title}
+                
+                input(type='submit')
+                
